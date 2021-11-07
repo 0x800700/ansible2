@@ -1,0 +1,7 @@
+---
+- name: 'INSTALL | install nginx'
+  import_tasks: "install.yml"
+  tags: ['nginx', 'nginx::install']
+
+- name: 'Iconfig'
+  import_tasks: "config.yml"
